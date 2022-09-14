@@ -6,7 +6,7 @@ function ucFirst(str) {
     // let removeFirstWord = str.slice(1);
     // return upperCase + removeFirstWord;
 }
-//console.log(ucFirst('   how are you doing   '));
+console.log(ucFirst('   how are you doing   '));
 
 
 // check for spam word 'XXX'
