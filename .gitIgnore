@@ -2,4 +2,9 @@ scripts.js
 index.html
 object_task.js
 variable_task.js
-function_task.jsgit
+function_task.js
+JSON_task.js
+array_task.js
+Date_task.js
+iterable_task.js
+destructuring_assignment.js
