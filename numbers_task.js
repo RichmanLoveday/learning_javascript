@@ -21,3 +21,4 @@ function randomInteger(min, max) {
     return Math.round(randomNum);
 }
 console.log(randomInteger(1, 5));
+
