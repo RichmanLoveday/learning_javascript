@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    } */
+
+    .menu ul {
+        margin: 0;
+        list-style: none;
+        padding-left: 20px;
+        display: none;
+    }
+
+
+    .menu .title::before {
+        content: '▶ ';
+        font-size: 80%;
+        color: green;
+    }
+
+    .menu.open .title::before {
+        content: '▼ ';
+    }
+
+    .menu.open ul {
+        display: block;
+       
+    }
+
+    .message {
+        /* border: 1px solid brown; */
+        padding: 10px;
+        position: relative;
+        background-color: rgb(190, 229, 190);
+        width: 50%;
+        margin: auto;
+        /* margin-top: 50px; */
+    }
+
+    .message .line {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 3px;
+        background-color: rgb(30, 194, 30);
+    }
+
+    .message .close_btn {
+        content: "[X]";
+        position: absolute;
+        height: 20px;
+        right: 10;
+        top: 10;
+        bottom: 20;
+        /* border: 1px solid brown; */
+        color: rgb(214, 91, 91);
+        cursor: pointer;
+    }
+    .hide {
+        display: none;
+    }
+    
+    
+</style>
+<body>
+    
+    <button id="appear">Click To Hide Text</button>
+    <div id="text"></div>
+    <br>
+
+   <div class="menu" id="menu">
+    <span class="title">Sweeties (click me)!</span>
+    <ul>
+        <li>Cake</li>
+        <li>Donut</li>
+        <li>Honey</li>
+    </ul>
+   </div>
+
+   <div id="message">
+        <div class="message">
+            <span class="line"></span>
+            <h1>Horse</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium possimus porro ducimus sequi? Culpa error optio maiores sit illum rerum qui iure? Repellendus debitis obcaecati perferendis corrupti cupiditate maxime!
+            </p>
+        </div>
+        
+        <div class="message">
+        <span class="line"></span>
+        <h1>Lion</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium possimus porro ducimus sequi? Culpa error optio maiores sit illum rerum qui iure? Repellendus debitis obcaecati perferendis corrupti cupiditate maxime!
+        </p>
+        </div>
+        
+        <div class="message">
+        <span class="line"></span>
+        <h1>Cow</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium possimus porro ducimus sequi? Culpa error optio maiores sit illum rerum qui iure? Repellendus debitis obcaecati perferendis corrupti cupiditate maxime!
+        </p>
+        </div>
+   </div>
+
+   
+</body>
+<script src="browser_event_task.js"></script>
+</html>
