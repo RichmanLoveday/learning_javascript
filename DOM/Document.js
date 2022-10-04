@@ -508,3 +508,31 @@ document.addEventListener('click', (event) => {
     console.log(event);
     if(event.target.dataset.counter != undefined) event.target.value++;
 })
+
+// Browser default actions
+// menu5.onClick = function(event)  {
+//     console.log(event)
+//     //if(event.target.nodeName != 'A') return;
+
+// };
+
+context_menu.oncontextmenu = (event) => {
+    console.log(event)
+    event.preventDefault();
+    event.stopPropagation();
+    console.log("Button context menu");
+};
+
+document.oncontextmenu = (event) => {
+    console.log(event);
+    if(event.defaultPrevented) return;
+    event.preventDefault();
+    console.log("Document context menu");
+
+}
+
+
+function handler() {
+    alert( "..." );
+    return false;
+}

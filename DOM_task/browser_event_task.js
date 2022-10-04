@@ -14,6 +14,8 @@ menu.addEventListener('click', function() {
     menu.classList.toggle('open');
 })
 
+
+
 // let message = document.getElementById('message');
 // message.insertAdjacentHTML('afterbegin', '<div class="close_btn">[x]</div>');
 // message1.insertAdjacentHTML('afterbegin', '<div class="close_btn">[x]</div>');
